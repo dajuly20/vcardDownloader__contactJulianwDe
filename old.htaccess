@@ -1,0 +1,6 @@
+#Protect Directory
+# ADD USER to htaccess  htpasswd /etc/apache2/.htpasswd newuser
+AuthName "Des isch geheim oder so!"
+AuthType Basic
+AuthUserFile "/etc/apache2/.htpasswords/.contact.julianw.de.htpasswd"
+Require valid-user
