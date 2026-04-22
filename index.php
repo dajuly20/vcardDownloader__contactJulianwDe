@@ -86,7 +86,7 @@ $vcard_exists = file_exists($me['vcard_file']);
             </div>
 
             <div class="videoWrapper">
-                <video loop muted class="custom-video" id="video_background" poster="images/julian.png">
+                <video loop muted autoplay playsinline class="custom-video" id="video_background" poster="images/julian.png">
                     <source src="videos/wahlscheibe.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -115,6 +115,10 @@ $vcard_exists = file_exists($me['vcard_file']);
                         <li class="nav-item">
                             <a class="nav-link" href="#about"><b>whoami</b></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#career">cat ./career.json</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">ls -la ./projects</a>
                         </li>
@@ -239,6 +243,137 @@ $vcard_exists = file_exists($me['vcard_file']);
             </div>
         </section>
 
+        <section class="section-padding bg-light" id="career">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">Werdegang</h2>
+                    </div>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-secondary"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">1997 – 2004</span>
+                            <h5>Schulbildung</h5>
+                            <p class="mb-0">Staudinger Gesamtschule · Emil Thoma Realschule Freiburg<br>
+                            <small class="text-muted">Mittlere Reife</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-secondary"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2006 – 2007</span>
+                            <h5>Berufsfachschule Elektrotechnik</h5>
+                            <p class="mb-0">Hans Thoma Schule, Titisee-Neustadt</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-warning"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2007 – 2011</span>
+                            <h5>Ausbildung: Elektroniker</h5>
+                            <p class="mb-0">Fachrichtung Energie- &amp; Gebäudetechnik<br>
+                            Elektro Schillinger GmbH, Freiburg<br>
+                            <small class="text-muted">Abschluss: 83 Punkte (gut)</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-secondary"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2011 – 2012</span>
+                            <h5>Fachhochschulreife</h5>
+                            <p class="mb-0">Berufskolleg Freiburg<br>
+                            <small class="text-muted">Note: 2,0 (gut)</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-primary"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2012 – 2019</span>
+                            <h5>B. Eng. Technische Informatik</h5>
+                            <p class="mb-0">Hochschule Pforzheim · Note: 2,2 (gut)<br>
+                            <small class="text-muted">Thesis: SPS-Kleinsteuerung auf Raspberry Pi mit graphischer Programmierung &amp; IFTTT — Note: 2,0</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-info"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Sept. 2014 – Feb. 2015</span>
+                            <h5>Praxissemester</h5>
+                            <p class="mb-0">AVM Computersysteme Vertriebs GmbH, Berlin<br>
+                            <small class="text-muted">Entwicklung von Softwaretests</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-info"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2015 – 2016</span>
+                            <h5>Werkstudent VoIP / Softwareentwicklung</h5>
+                            <p class="mb-0">Pixabit GmbH, Leonberg<br>
+                            <small class="text-muted">VoIP-Telefonanlagen</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-info"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2016</span>
+                            <h5>Werkstudent App-Entwicklung</h5>
+                            <p class="mb-0">IT Asset Management GmbH, Teningen<br>
+                            <small class="text-muted">Android / Cordova</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-info"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Nov. 2018 – Jan. 2019</span>
+                            <h5>Werkstudent Datenbanken &amp; PHP</h5>
+                            <p class="mb-0">Pixabit GmbH, Leonberg</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-success"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019 – 2021</span>
+                            <h5>Softwareentwickler</h5>
+                            <p class="mb-0">HRworks GmbH, Freiburg<br>
+                            <small class="text-muted">Smalltalk</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot bg-danger"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 – 2024</span>
+                            <h5>Softwareentwickler</h5>
+                            <p class="mb-0">KRIKO Engineering<br>
+                            <small class="text-muted">TypeScript / React</small></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot bg-dark"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025</span>
+                            <h5>Fachinformatiker Systemintegration</h5>
+                            <p class="mb-0">NetSys IT, Freiburg</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section class="section-padding" id="portfolio">
             <div class="container">
                 <div class="row">
@@ -251,6 +386,21 @@ $vcard_exists = file_exists($me['vcard_file']);
                     <div class="col-lg-6 col-12">
 
                         <div class="portfolio-thumb mb-5" data-aos="fade-up">
+                            <a href="images/orgahero-screenshot.png" class="image-popup">
+                                <img src="images/orgahero-screenshot.png" class="img-fluid portfolio-image" alt="OrgaHero App">
+                            </a>
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">
+                                    OrgaHero&nbsp;
+                                    <a target="_blank" href="https://github.com/dajuly20/OrgaHero">
+                                        <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
+                                    </a>
+                                </h4>
+                                <p class="text-success">Planer, To-Dos, Einkauf, Tracking &amp; KI-Coach — lokal auf deinem Gerät (TypeScript / React)</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb mb-5" data-aos="fade-up">
                             <a href="images/TelegramDoorOpener.gif" class="image-popup">
                                 <img src="images/TelegramDoorOpener.gif" class="img-fluid portfolio-image" alt="Türöffner per Telegram">
                             </a>
@@ -261,13 +411,13 @@ $vcard_exists = file_exists($me['vcard_file']);
                                         <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
                                     </a>
                                 </h4>
-                                <p class="text-danger">Per Telegram Gruppe — Shelly Uni in Ritto Gegensprechanlage</p>
+                                <p class="text-danger">Per Telegram-Gruppe — Shelly Uni in Ritto-Gegensprechanlage</p>
                             </div>
                         </div>
 
-                        <div class="portfolio-thumb mb-5" data-aos="fade-up">
-                            <a href="images/ikeMitTelefon.jpg" class="image-popup">
-                                <img src="images/ikeMitTelefon.jpg" class="img-fluid portfolio-image" alt="Retro Smarthome">
+                        <div class="portfolio-thumb" data-aos="fade-up">
+                            <a href="images/retro-smarthome-asterisk.png" class="image-popup">
+                                <img src="images/retro-smarthome-asterisk.png" class="img-fluid portfolio-image" alt="Retro Smarthome Asterisk">
                             </a>
                             <div class="portfolio-info">
                                 <h4 class="portfolio-title mb-0">
@@ -276,19 +426,7 @@ $vcard_exists = file_exists($me['vcard_file']);
                                         <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
                                     </a>
                                 </h4>
-                                <p class="text-warning">Smart Home steuern per Wählscheibentelefon</p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-thumb" data-aos="fade-up">
-                            <a href="images/manualOnkyoRi.png" class="image-popup">
-                                <img src="images/manualOnkyoRi.png" class="img-fluid portfolio-image" alt="Onkyo RI">
-                            </a>
-                            <div class="portfolio-info">
-                                <h4 class="portfolio-title mb-0">
-                                    <a href="https://github.com/dajuly20/node-red-contrib-onkyo-ri" target="_blank">node-red-contrib-onkyo-ri</a>
-                                </h4>
-                                <p class="text-info">Onkyo RI Protokoll für Node-RED</p>
+                                <p class="text-warning">Smart Home steuern per Wählscheibentelefon + Asterisk</p>
                             </div>
                         </div>
 
@@ -298,38 +436,8 @@ $vcard_exists = file_exists($me['vcard_file']);
                     <div class="col-lg-6 col-12">
 
                         <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
-                            <a href="images/aufmSchwabentorZurBardoRaus.jpg" class="image-popup">
-                                <img src="images/aufmSchwabentorZurBardoRaus.jpg" class="img-fluid portfolio-image" alt="Freiburg">
-                            </a>
-                            <div class="portfolio-info">
-                                <h4 class="portfolio-title mb-0">
-                                    Freiburg im Breisgau&nbsp;
-                                    <a target="_blank" href="https://github.com/dajuly20/network-documentation-plan-wg-merzhauser">
-                                        <img title="Netzwerkdoku auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
-                                    </a>
-                                </h4>
-                                <p class="text-warning">Arbeiten &amp; leben in einer der schönsten Städte der Welt!</p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-thumb mb-5" data-aos="fade-up">
-                            <a href="images/rennradKueche.png" class="image-popup">
-                                <img src="images/rennradKueche.png" class="img-fluid portfolio-image" alt="Solar Projekt">
-                            </a>
-                            <div class="portfolio-info">
-                                <h4 class="portfolio-title mb-0">
-                                    Solar Datenprojekt&nbsp;
-                                    <a target="_blank" href="https://github.com/dajuly20/SolarData">
-                                        <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
-                                    </a>
-                                </h4>
-                                <p class="text-success">RS485 Solar-Leistungsdaten → Web-Frontend + MariaDB (Uni-Projekt)</p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-thumb" data-aos="fade-up">
-                            <a href="images/abgefahreneFreunde.png" class="image-popup">
-                                <img src="images/abgefahreneFreunde.png" class="img-fluid portfolio-image" alt="Home Assistant Floor Plan">
+                            <a href="images/sweethome3d-demo.gif" class="image-popup">
+                                <img src="images/sweethome3d-demo.gif" class="img-fluid portfolio-image" alt="Sweet Home 3D → Home Assistant Plugin">
                             </a>
                             <div class="portfolio-info">
                                 <h4 class="portfolio-title mb-0">
@@ -338,7 +446,37 @@ $vcard_exists = file_exists($me['vcard_file']);
                                         <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
                                     </a>
                                 </h4>
-                                <p class="text-primary">Plugin: generiert HA-Grundriss aus Sweet Home 3D</p>
+                                <p class="text-primary">Java-Plugin: generiert HA-Grundriss automatisch aus Sweet Home 3D</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb mb-5" data-aos="fade-up">
+                            <a href="images/controlpi-demo.gif" class="image-popup">
+                                <img src="images/controlpi-demo.gif" class="img-fluid portfolio-image" alt="ControlPi Demo">
+                            </a>
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">
+                                    ControlPi&nbsp;
+                                    <a target="_blank" href="https://github.com/dajuly20/ControlPi">
+                                        <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
+                                    </a>
+                                </h4>
+                                <p class="text-danger">SPS-Frontend &amp; -Backend mit PiFaceDigital auf dem Raspberry Pi</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-thumb" data-aos="fade-up">
+                            <a href="images/manualOnkyoRi.png" class="image-popup">
+                                <img src="images/manualOnkyoRi.png" class="img-fluid portfolio-image" alt="Onkyo RI">
+                            </a>
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">
+                                    <a href="https://github.com/dajuly20/node-red-contrib-onkyo-ri" target="_blank">node-red-contrib-onkyo-ri</a>&nbsp;
+                                    <a target="_blank" href="https://github.com/dajuly20/node-red-contrib-onkyo-ri">
+                                        <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
+                                    </a>
+                                </h4>
+                                <p class="text-info">Onkyo RI Protokoll für Node-RED (npm-Paket)</p>
                             </div>
                         </div>
 
@@ -353,15 +491,15 @@ $vcard_exists = file_exists($me['vcard_file']);
                 <div class="row">
 
                     <div class="col-12">
-                        <h2 class="mb-5 text-center" data-aos="fade-up">News &amp; Projekte</h2>
+                        <h2 class="mb-5 text-center" data-aos="fade-up">Weitere Projekte</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
                         <div class="news-thumb" data-aos="fade-up">
-                            <a href="https://github.com/dajuly20/hoymiles-mqtt" target="_blank" class="news-image-hover news-image-hover-warning">
-                                <img src="images/balkon.jpg" class="img-fluid large-news-image news-image" alt="Hoymiles MQTT">
+                            <a href="images/hoymiles-solar.png" class="image-popup news-image-hover news-image-hover-warning">
+                                <img src="images/hoymiles-solar.png" class="img-fluid large-news-image news-image" alt="Hoymiles Solar Chart">
                             </a>
-                            <div class="news-category bg-warning text-white">Projekt</div>
+                            <div class="news-category bg-warning text-white">IoT / Energy</div>
                             <div class="news-text-info">
                                 <h5 class="news-title">
                                     <a href="https://github.com/dajuly20/hoymiles-mqtt" target="_blank" class="news-title-link">
@@ -376,31 +514,29 @@ $vcard_exists = file_exists($me['vcard_file']);
                     <div class="col-lg-6 col-12">
                         <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
                             <div class="news-top w-100">
-                                <a href="https://github.com/dajuly20/PyThermalCamera" target="_blank" class="news-image-hover news-image-hover-primary">
-                                    <img src="images/IMG_20210528_174008.jpg" class="img-fluid news-image" alt="Thermal Camera">
+                                <a href="images/thermal-camera.png" class="image-popup news-image-hover news-image-hover-primary">
+                                    <img src="images/thermal-camera.png" class="img-fluid news-image" alt="Thermal Camera Screenshot">
                                 </a>
-                                <div class="news-category bg-primary text-white">Projekt</div>
+                                <div class="news-category bg-primary text-white">Python / Pi</div>
                             </div>
                             <div class="news-bottom w-100">
                                 <div class="news-text-info">
                                     <h5 class="news-title">
                                         <a href="https://github.com/dajuly20/PyThermalCamera" target="_blank" class="news-title-link">
-                                            Python Wärmebildkamera (Topdon TC001) auf dem Pi
+                                            Wärmebildkamera (Topdon TC001) auf Linux &amp; Pi
                                         </a>
                                     </h5>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="text-muted">PyThermalCamera auf GitHub</span>
-                                    </div>
+                                    <span class="text-muted">PyThermalCamera auf GitHub</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
                             <div class="news-top w-100">
-                                <a href="https://github.com/dajuly20/freepbx_voicemail_handler" target="_blank" class="news-image-hover news-image-hover-success">
-                                    <img src="images/IMG-20210613-WA0021.jpg" class="img-fluid news-image" alt="FreePBX Voicemail">
+                                <a href="images/hoymiles-devices.png" class="image-popup news-image-hover news-image-hover-success">
+                                    <img src="images/hoymiles-devices.png" class="img-fluid news-image" alt="MQTT Devices in Home Assistant">
                                 </a>
-                                <div class="news-category bg-success text-white">Projekt</div>
+                                <div class="news-category bg-success text-white">VoIP / MQTT</div>
                             </div>
                             <div class="news-bottom w-100">
                                 <div class="news-text-info">
@@ -426,7 +562,7 @@ $vcard_exists = file_exists($me['vcard_file']);
 
                         <h2 class="mb-4 text-center" data-aos="fade-up">Schreib mir gerne!</h2>
 
-                        <form action="sendmail.php" method="post" class="contact-form" role="form" data-aos="fade-up">
+                        <form id="contactForm" class="contact-form" role="form" data-aos="fade-up">
 
                             <div class="row">
                                 <div class="col-lg-6 col-6">
@@ -471,7 +607,10 @@ $vcard_exists = file_exists($me['vcard_file']);
                             </div>
 
                             <div class="col-lg-5 col-12 mx-auto mt-5">
-                                <button type="submit" class="form-control">Nachricht senden</button>
+                                <button type="submit" id="contactSubmit" class="form-control">
+                                    <span id="submitText">Nachricht senden</span>
+                                    <span id="submitSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status"></span>
+                                </button>
                             </div>
                         </form>
 
@@ -533,6 +672,16 @@ $vcard_exists = file_exists($me['vcard_file']);
         </div>
     </footer>
 
+    <!-- Toast notifications -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+        <div id="contactToast" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+            <div class="d-flex">
+                <div class="toast-body fs-6" id="toastBody"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -546,9 +695,50 @@ $vcard_exists = file_exists($me['vcard_file']);
     <script>
         var video = document.getElementById("video_background");
         video.playbackRate = 1.5;
-        video.addEventListener("canplay", function () {
-            setTimeout(function () { video.play(); }, 5000);
+
+        // Contact form — AJAX submit with toast feedback
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var btn     = document.getElementById('contactSubmit');
+            var spinner = document.getElementById('submitSpinner');
+            var text    = document.getElementById('submitText');
+
+            btn.disabled = true;
+            spinner.classList.remove('d-none');
+            text.textContent = 'Wird gesendet…';
+
+            fetch('sendmail.php', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(this)
+            })
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+                showToast(data.ok);
+                if (data.ok) document.getElementById('contactForm').reset();
+            })
+            .catch(function() { showToast(false); })
+            .finally(function() {
+                btn.disabled = false;
+                spinner.classList.add('d-none');
+                text.textContent = 'Nachricht senden';
+            });
         });
+
+        function showToast(success) {
+            var toast   = document.getElementById('contactToast');
+            var body    = document.getElementById('toastBody');
+            toast.classList.remove('text-bg-success', 'text-bg-danger');
+            if (success) {
+                toast.classList.add('text-bg-success');
+                body.innerHTML = '<i class="bi-check-circle-fill me-2"></i>Nachricht gesendet! Ich melde mich bald.';
+            } else {
+                toast.classList.add('text-bg-danger');
+                body.innerHTML = '<i class="bi-x-circle-fill me-2"></i>Fehler beim Senden. Bitte direkt an <a href="mailto:<?= htmlspecialchars($me['email']) ?>" class="text-white fw-bold"><?= htmlspecialchars($me['email']) ?></a> schreiben.';
+            }
+            bootstrap.Toast.getOrCreateInstance(toast).show();
+        }
     </script>
 
     <?php if ($vcard_exists): ?>

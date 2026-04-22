@@ -62,10 +62,14 @@ try {
     $topic_line = $topics ? 'Themen: ' . implode(', ', $topics) . "\n" : '';
     $mail->Body = "Name:    $name\nE-Mail:  $email\n{$topic_line}\nNachricht:\n$message";
 
+    $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) || str_contains($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json');
+
     $mail->send();
-    header('Location: index.php?status=ok');
+    if ($isAjax) { header('Content-Type: application/json'); echo '{"ok":true}'; }
+    else          { header('Location: index.php?status=ok'); }
 } catch (Exception $e) {
     error_log('PHPMailer error: ' . $mail->ErrorInfo);
-    header('Location: index.php?status=error');
+    if ($isAjax) { header('Content-Type: application/json'); http_response_code(500); echo '{"ok":false}'; }
+    else          { header('Location: index.php?status=error'); }
 }
 exit;
