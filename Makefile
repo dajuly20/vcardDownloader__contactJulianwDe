@@ -16,6 +16,7 @@ docker:
 	@docker rm -f $(CONTAINER) 2>/dev/null || true
 	docker run -d --name $(CONTAINER) -p $(PORT):80 $(IMAGE)
 	@echo "Running at http://localhost:$(PORT)"
+	@sleep 1 && xdg-open http://localhost:$(PORT) 2>/dev/null & true
 
 # ── Local Apache install ───────────────────────────────────────────────────────
 installLocal:
