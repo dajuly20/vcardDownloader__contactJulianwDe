@@ -391,7 +391,7 @@ $vcard_exists = file_exists($me['vcard_file']);
                             </a>
                             <div class="portfolio-info">
                                 <h4 class="portfolio-title mb-0">
-                                    OrgaHero&nbsp;
+                                    <a href="https://orgahero.com" target="_blank">OrgaHero</a>&nbsp;
                                     <a target="_blank" href="https://github.com/dajuly20/OrgaHero">
                                         <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
                                     </a>
@@ -510,24 +510,7 @@ $vcard_exists = file_exists($me['vcard_file']);
                         <h2 class="mb-5 text-center" data-aos="fade-up">Weitere Projekte</h2>
                     </div>
 
-                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <div class="news-thumb" data-aos="fade-up">
-                            <a href="images/hoymiles-solar.png" class="image-popup news-image-hover news-image-hover-warning">
-                                <img src="images/hoymiles-solar.png" class="img-fluid large-news-image news-image" alt="Hoymiles Solar Chart">
-                            </a>
-                            <div class="news-category bg-warning text-white">IoT / Energy</div>
-                            <div class="news-text-info">
-                                <h5 class="news-title">
-                                    <a href="https://github.com/dajuly20/hoymiles-mqtt" target="_blank" class="news-title-link">
-                                        Hoymiles PV-Anlage → Home Assistant ohne Cloud
-                                    </a>
-                                </h5>
-                                <span class="text-muted">hoymiles-mqtt auf GitHub</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-12 col-12">
                         <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
                             <div class="news-top w-100">
                                 <a href="images/thermal-camera.png" class="image-popup news-image-hover news-image-hover-primary">
