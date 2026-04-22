@@ -480,6 +480,22 @@ $vcard_exists = file_exists($me['vcard_file']);
                             </div>
                         </div>
 
+                        <div class="portfolio-thumb mt-5" data-aos="fade-up">
+                            <a href="images/julian.png" class="image-popup">
+                                <img src="images/orgahero-logo.png" class="img-fluid portfolio-image" style="object-fit:contain; background:#f8f9fa; padding:2rem;" alt="vCard Downloader">
+                            </a>
+                            <div class="portfolio-info">
+                                <h4 class="portfolio-title mb-0">
+                                    vCard Downloader / Visitenkarte&nbsp;
+                                    <a target="_blank" href="https://github.com/dajuly20/vcardDownloader__contactJulianwDe">
+                                        <img title="Repository auf GitHub" src="images/github-mark.png" width="30px" alt="GitHub">
+                                    </a>
+                                </h4>
+                                <p class="text-secondary">Diese Seite hier — PHP, Bootstrap, Gmail SMTP, Docker.<br>
+                                <small class="text-muted">Digitale Visitenkarte mit vCard-Download, Kontaktformular &amp; Portfolio</small></p>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
