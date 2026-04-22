@@ -24,10 +24,11 @@ docker:
 # ── Deploy to production ──────────────────────────────────────────────────────
 deploy:
 	@echo "Deploying to $(SERVER):$(WEBROOT) ..."
-	rsync -avz --exclude='.git' --exclude='.gitignore' --exclude='Makefile' \
-	    --exclude='Dockerfile' --exclude='.dockerignore' --exclude='*.md' \
-	    --exclude='oldIndex.php' --exclude='old.htaccess' --exclude='.vscode' \
-	    --exclude='mail_config.php' \
+	rsync -avz --no-group --no-perms --omit-dir-times \
+	    --exclude='.git' --exclude='.gitignore' --exclude='.claude' \
+	    --exclude='Makefile' --exclude='Dockerfile' --exclude='.dockerignore' \
+	    --exclude='*.md' --exclude='oldIndex.php' --exclude='old.htaccess' \
+	    --exclude='.vscode' --exclude='mail_config.php' \
 	    ./ $(SERVER):$(WEBROOT)/
 	@echo ""
 	@echo "Done! https://contact.julianw.de"
