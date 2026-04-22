@@ -1,3 +1,16 @@
-      #invisible-before-hover{
-            color: red;
-        }
+/* Easter egg link in hero — invisible until hovered */
+.easter-egg-link {
+    color: transparent !important;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.easter-egg-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+}
+
+/* Hero CTA buttons */
+.hero-buttons .btn {
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
