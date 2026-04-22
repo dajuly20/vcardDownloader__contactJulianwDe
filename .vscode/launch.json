@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run in Docker",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "make",
+            "runtimeArgs": ["docker"],
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "Running at (http://localhost:[0-9]+)",
+                "uriFormat": "%s"
+            },
+            "preLaunchTask": "Docker: Build & Run",
+            "postDebugTask": "Docker: Stop (clean)"
+        }
+    ]
+}
